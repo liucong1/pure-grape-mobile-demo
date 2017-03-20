@@ -1,0 +1,26 @@
+{
+  "name": "grape-website",
+  "version": "0.0.1",
+  "description": "website based on Node.js",
+  "main": "index.js",
+  "scripts": {
+    "server:dev-win": "set NODE_ENV=development&nodemon --watch dist/app --watch dist/resource-map --watch dist/views dist/app/index.js",
+    "server:dev": "NODE_ENV=development nodemon --watch dist/app --watch dist/resource-map --watch dist/views dist/app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "env:init": "scripty"
+  },
+  "keywords": [
+     "grape"
+  ],
+  "author": "grape-team",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^4.1.5",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "flat": "^2.0.1",
+    "formidable": "^1.0.17",
+    "fs-extra": "^0.30.0",
+    "grapejs": "^1.1.5",
+    "validate.js": "^0.10.0"
+  }
+}

@@ -1,0 +1,20 @@
+
+.ui-toast-bg{
+	position: fixed;
+	bottom: 10%;
+	width: 100%;
+	text-align: center;
+	z-index: 99999;
+
+	.ui-toast-wrap{
+		background: rgba(0, 0, 0, 0.75);
+		padding: 0.16rem 0.25rem;
+		color: #fff;
+		border-radius: 0.05rem;
+		font-size: .3rem;
+		max-width: 90%;
+		word-wrap: break-word;
+		display: inline-block;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,81 @@
+
+
+.j-btn, a.j-btn{
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius:2px;
+  cursor: pointer;
+  outline:none;
+}
+
+.j-btn-block{
+  display: block;
+}
+
+.j-btn-big{
+  width: 180px;
+  height: 34px;
+  line-height:34px;
+}
+
+.j-btn-big-x{
+  width: 220px;
+  height: 34px;
+  line-height:34px;
+}
+
+.j-btn-small{
+  width: 70px;
+  height: 28px;
+  line-height: 28px;
+}
+
+//普通橙色按钮
+.j-btn-orange, a.j-btn-orange{
+  color: #fff;
+  background: #ff771c;
+
+  &:hover{
+    background: #f2711b;
+  }
+}
+
+//普通蓝色按钮
+.j-btn-blue, a.j-btn-blue{
+  color: #fff;
+  background: #3a84cf;
+  
+  &:hover{
+    background: #3277bf;
+  }
+}
+
+//初始带边框的白色按钮, hover颜色翻转
+.j-btn-white, .j-btn-cancel, a.j-btn-white, a.j-btn-cancel{
+  color: #ff771c;
+  background: #fff;
+  border: 1px solid #ff771c;
+
+  &:hover{
+    color: #fff;
+    background: #ff771c;
+  }
+}
+
+//灰色按钮,禁用按钮的样式
+.j-btn-gray, .j-btn-disabled, a.j-btn-gray, a.j-btn-disabled{
+  color: #fff !important;
+  background: #e1e1e1 !important;
+}
+
+.j-btn-disabled{
+  cursor: default;
+}

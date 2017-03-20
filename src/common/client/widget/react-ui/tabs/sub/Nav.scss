@@ -1,0 +1,49 @@
+
+@import "/client/static/css/_helper.scss";
+
+//React Tab 组件的导航栏总高度(px)
+$tab-nav-height: 90;
+
+.r-tab-nav{
+
+  height: px2rem($tab-nav-height);
+  overflow: hidden;
+
+  .r-tab-nav-item{
+    float: left;
+    @include box-sizing(border-box);
+    height: px2rem($tab-nav-height);
+    line-height: px2rem($tab-nav-height);
+    border: 1px solid transparent;
+    border-width: 0 1px 1px 1px;
+    border-color: transparent transparent #e5e5e5 transparent;
+    @include px2px('font-size', 26);
+    color: #828282;
+    text-align: center;
+    list-style: none;
+    
+    &.r-tab-nav-item-active{
+      border-bottom: solid 1px #254f7c;
+      color: #254f7c;
+    }
+  }
+}
+
+//可横向滚动的TAB导航
+.r-tab-nav-scrollable-wrap{
+
+  height: px2rem($tab-nav-height);
+  overflow-x: auto;
+
+  .r-tab-nav{
+    float: left;
+    overflow: visible;
+    white-space: nowrap;
+    font-size:0;
+
+    .r-tab-nav-item{
+      float: none;
+      display: inline-block;
+    }
+  }
+}
