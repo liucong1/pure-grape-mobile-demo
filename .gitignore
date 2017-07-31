@@ -15,8 +15,4 @@ node_modules
 
 npm-debug.log
 
-/~*
-
-demo-app/log
-
 dist/

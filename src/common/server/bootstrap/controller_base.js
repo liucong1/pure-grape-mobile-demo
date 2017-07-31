@@ -6,9 +6,6 @@
 
 'use strict';
 
-const validate = require("validate.js");
-
-
 class Base extends grape.ControllerBase {
 
     init(http){
@@ -95,19 +92,6 @@ class Base extends grape.ControllerBase {
         this.http.argumentValidateFail( message );
     }
 
-    validateArgument(data, constraints){
-        let validateResult = validate(data, constraints, { fullMessages : false });
-
-        if(validateResult){
-            let resultMsg = "";
-            for(let key in validateResult){
-                resultMsg += key + validateResult[key].join()+ "; " ;
-            }
-            return resultMsg;
-        }
-
-        return true;
-    }
 
 }
 

@@ -11,7 +11,7 @@ project_source_common_dir="${project_source_dir}/common"
 dist_dir_name="node-cms"
 dist_dir="${project_dir}/${dist_dir_name}"
 dist_app_dir="${dist_dir}/app"
-tar_name="prod-node-cms.tar.gz"
+tar_name="node-mobile.tar.gz"
 
 # 子模块
 modules=( common dash passport designer )
